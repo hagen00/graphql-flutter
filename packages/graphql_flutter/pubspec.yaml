@@ -5,11 +5,14 @@ repository: https://github.com/zino-app/graphql-flutter/tree/main/packages/graph
 issue_tracker: https://github.com/zino-hofmann/graphql-flutter/issues
 
 # just for dev work
-# publish_to: 'none'
+publish_to: 'none'
 
 dependencies:
   graphql:
-    path: ../graphql
+    git:
+      url: https://github.com/hagen00/graphql-flutter.git
+      ref: main
+      path: packages/graphql
   gql_exec: ^1.0.0
   flutter:
     sdk: flutter
